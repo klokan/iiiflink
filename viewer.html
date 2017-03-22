@@ -1,7 +1,10 @@
 <html>
 <body>
+
 <script>
-document.write(location.hash);
+document.write("Initialized with: "+ location.hash + "<br>");
+
+window.onhashchange = function() { document.write("Additional: "+ location.hash + "<br>"); }
 </script>
 </body>
 </html>
