@@ -1,10 +1,16 @@
 <html>
 <body>
 
-<script>
-document.write("Initialized with: "+ location.hash + "<br>");
+<h1>Viewer</h1>
 
-window.onhashchange = function() { if(document.body != null){ document.body.appendChild(document.createTextNode("Additional: "+ location.hash + "<br>")); } }
+This can be a complicated JavaSript viewer - displaying different IIIF documents / manifests.<p>
+  
+Here is how it reacts to the `#URL`:<p>
+  
+<script>
+document.write("Initialize with "+ location.hash );
+
+window.onhashchange = function() { if(document.body != null){ document.body.appendChild(document.createTextNode(" and add "+ location.hash)); } }
 </script>
 </body>
 </html>
