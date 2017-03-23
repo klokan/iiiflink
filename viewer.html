@@ -4,7 +4,7 @@
 <script>
 document.write("Initialized with: "+ location.hash + "<br>");
 
-window.onhashchange = function() { if(document.body != null){ document.body.appendChild("Additional: "+ location.hash + "<br>"); } }
+window.onhashchange = function() { if(document.body != null){ document.body.appendChild(document.createTextNode("Additional: "+ location.hash + "<br>")); } }
 </script>
 </body>
 </html>
